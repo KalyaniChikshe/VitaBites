@@ -1,0 +1,217 @@
+<resources>
+    <string name="app_name">VitaBites</string>
+    <string name="food">Food</string>
+    <string name="title_activity_favorite_foods">Add to Favorites</string>
+
+    <string-array name="vitamins">
+        <item name="vita_a">Vitamin A</item>
+        <item name="vita_b12">B12</item>
+        <item name="vita_c">C</item>
+        <item name="vita_d">D</item>
+        <item name="vita_e">E</item>
+        <item name="vita_k">K</item>
+        <item name="vita_b6">B6</item>
+        <item name="vita_b9">B9</item>
+        <item name="vita_b3">B3</item>
+        <item name="vita_zn">Zn(Zinc)</item>
+        <item name="vita_mg">Mg(Magnesium)</item>
+        <item name="vita_ca">Ca(Calcium)</item>
+        <item name="vita_fe">Fe(iron)</item>
+        <item name="vita_b7">B7(Biotin)</item>
+        <item name="vita_ca">Omega-3</item>
+        <item name="vita_fe">Cr(Chromium)</item>
+    </string-array>
+
+    <string-array name="vitamin_a_foods">
+        <item>Carrots</item>
+        <item>Sweet potatoes</item>
+        <item>Spinach</item>
+        <item>Kale</item>
+        <item>Broccoli</item>
+        <item>Mangoes</item>
+        <item>Cantaloupe</item>
+        <item>Peaches</item>
+        <item>Papayas</item>
+        <item>Red peppers</item>
+        <item>Tomatoes</item>
+        <item>Cod liver oil</item>
+        <item>Tuna</item>
+        <item>Eggs</item>
+        <item>Milk</item>
+        <item>Cheese</item>
+    </string-array>
+
+    <string-array name="vitamin_b12_foods">
+        <item>Tuna</item>
+        <item>Milk</item>
+        <item>Salmon</item>
+        <item>Eggs</item>
+        <item>Chicken</item>
+        <item>Crab</item>
+        <item>Shrimp</item>
+    </string-array>
+
+    <string-array name="vitamin_c_foods">
+        <item>Oranges</item>
+        <item>Kiwi</item>
+        <item>Broccoli</item>
+        <item>Strawberries</item>
+        <item>lemons</item>
+        <item>Brussels sprouts</item>
+        <item>Tomatoes</item>
+        <item>Cranberries</item>
+        <item>Pineapple</item>
+    </string-array>
+    <string-array name="vitamin_d_foods">
+        <item>Salmon</item>
+        <item>Cod liver oil</item>
+        <item>Tuna</item>
+    </string-array>
+
+    <string-array name="vitamin_e_foods">
+        <item>Almonds</item>
+        <item>Hazelnuts</item>
+        <item>Peanuts</item>
+        <item>Quinoa</item>
+        <item>Avocado</item>
+    </string-array>
+    <string-array name="vitamin_k_foods">
+        <item>Green peas</item>
+        <item>Spinach</item>
+        <item>Kale</item>
+        <item>Parsley</item>
+        <item>Basil</item>
+    </string-array>
+
+    <string-array name="vitamin_b6_foods">
+        <item>Chicken</item>
+        <item>Turkey</item>
+        <item>Potatoes</item>
+        <item>Chickpeas</item>
+        <item>Banana</item>
+        <item>Spinach</item>
+    </string-array>
+    <string-array name="vitamin_b9_foods">
+        <item>Lentils</item>
+        <item>Chickpeas</item>
+        <item>Beets</item>
+        <item>Asparagus</item>
+        <item>Black beans</item>
+        <item>Kidney beans</item>
+        <item>Avocado</item>
+    </string-array>
+
+    <string-array name="vitamin_b3_foods">
+        <item>Chicken</item>
+        <item>Turkey</item>
+        <item>Avocado</item>
+        <item>Swordfish</item>
+        <item>Peanuts</item>
+        <item>Mushrooms</item>
+        <item>Brown rice</item>
+        <item>Quinoa</item>
+    </string-array>
+    <string-array name="vitamin_zn_foods">
+        <item>Oysters</item>
+        <item>Pumpkin seeds</item>
+        <item>Chickpeas</item>
+        <item>Cashews</item>
+        <item>Yogurt</item>
+        <item>Spinach</item>
+    </string-array>
+
+    <string-array name="vitamin_mg_foods">
+        <item>Spinach</item>
+        <item>Almonds</item>
+        <item>Avocado</item>
+        <item>Black beans</item>
+        <item>Dark chocolate</item>
+        <item>Salmon</item>
+        <item>Tofu</item>
+        <item>Edamame</item>
+        <item>Quinoa</item>
+    </string-array>
+
+    <string-array name="vitamin_ca_foods">
+        <item>Milk</item>
+        <item>Cheese</item>
+        <item>Yogurt</item>
+        <item>Kale</item>
+        <item>Spinach</item>
+        <item>Tofu</item>
+        <item>Sesame seeds</item>
+        <item>Chia seeds</item>
+        <item>White beans</item>
+    </string-array>
+
+    <string-array name="vitamin_fe_foods">
+        <item>Pumpkin seeds</item>
+        <item>Cashews</item>
+        <item>Almonds</item>
+        <item>Kidney beans</item>
+        <item>Chickpeas</item>
+        <item>Lentils</item>
+        <item>Dates</item>
+        <item>Oysters</item>
+        <item>Clams</item>
+        <item>Chicken</item>
+    </string-array>
+
+    <string-array name="vitamin_b7_foods">
+        <item>Egg yolks</item>
+        <item>Sweet potatoes</item>
+        <item>Broccoli</item>
+        <item>Oats</item>
+        <item>Barley</item>
+        <item>Avocado</item>
+        <item>Salmon</item>
+        <item>Mushrooms</item>
+    </string-array>
+
+    <string-array name="vitamin_omega_3_foods">
+        <item>Soybeans</item>
+        <item>Salmon</item>
+        <item>Mackerel</item>
+        <item>Sardines</item>
+        <item>Flaxseeds</item>
+        <item>Walnuts</item>
+        <item>Shrimp</item>
+    </string-array>
+
+    <string-array name="vitamin_cr_foods">
+        <item>Barley</item>
+        <item>Green beans</item>
+        <item>Broccoli</item>
+        <item>Sweet potatoes</item>
+        <item>Grapes</item>
+    </string-array>
+
+    <string name="settings">Settings</string>
+    <string name="pref_title_theme">Dark theme</string>
+    <string name="pref_description_theme">Turn on dark theme</string>
+    <string name="pref_title_vitamin_order">Vitamin order</string>
+    <string name="pref_none">None</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string-array name="pref_vitamin_order">
+        <item>Ascending</item>
+        <item>Descending</item>
+    </string-array>
+
+    <string-array name="pref_vitamin_order_values">
+        <item>asc</item>
+        <item>desc</item>
+    </string-array>
+
+    <string-array name="font_size_options">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="font_size_values">
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodFragment">
+
+    <TextView
+        android:id="@+id/vitamin_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/vitaminName"
+        tools:text="Vitamin name"/>
+
+    <ListView
+        android:id="@+id/food_description"
+        style="@style/foodDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Food" />
+
+    <ListView
+        android:id="@+id/food_description_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/foodDescription"
+        tools:text="Food"/>
+
+</LinearLayout>
