@@ -5,21 +5,21 @@
 
     <string-array name="vitamins">
         <item name="vita_a">Vitamin A</item>
-        <item name="vita_b12">B12</item>
-        <item name="vita_c">C</item>
-        <item name="vita_d">D</item>
-        <item name="vita_e">E</item>
-        <item name="vita_k">K</item>
-        <item name="vita_b6">B6</item>
-        <item name="vita_b9">B9</item>
-        <item name="vita_b3">B3</item>
-        <item name="vita_zn">Zn(Zinc)</item>
-        <item name="vita_mg">Mg(Magnesium)</item>
-        <item name="vita_ca">Ca(Calcium)</item>
-        <item name="vita_fe">Fe(iron)</item>
-        <item name="vita_b7">B7(Biotin)</item>
-        <item name="vita_ca">Omega-3</item>
-        <item name="vita_fe">Cr(Chromium)</item>
+        <item name="vita_b12">Vitamin B12</item>
+        <item name="vita_c">Vitamin C</item>
+        <item name="vita_d">Vitamin D</item>
+        <item name="vita_e">Vitamin E</item>
+        <item name="vita_k">Vitamin K</item>
+        <item name="vita_b6">Vitamin B6</item>
+        <item name="vita_b9">Vitamin B9</item>
+        <item name="vita_b3">Vitamin B3</item>
+        <item name="vita_zn">Vitamin Zn(Zinc)</item>
+        <item name="vita_mg">Vitamin Mg(Magnesium)</item>
+        <item name="vita_ca">Vitamin Ca(Calcium)</item>
+        <item name="vita_fe">Vitamin Fe(iron)</item>
+        <item name="vita_b7">Vitamin B7(Biotin)</item>
+        <item name="vita_ca">Vitamin Omega-3</item>
+        <item name="vita_fe">Vitamin Cr(Chromium)</item>
     </string-array>
 
     <string-array name="vitamin_a_foods">
