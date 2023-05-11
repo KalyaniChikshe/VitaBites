@@ -2,6 +2,7 @@ package com.zybooks.vitabites
 
 
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -21,6 +22,7 @@ class VitaminFragment : Fragment() {
                                   savedInstanceState: Bundle?): View {
             val rootView = inflater.inflate(R.layout.fragment_vitamin, container, false)
 
+
             // Click listener for the RecyclerView
             val onClickListener = View.OnClickListener { itemView: View ->
 
@@ -29,8 +31,13 @@ class VitaminFragment : Fragment() {
                 val args = Bundle()
                 args.putInt(ARG_VITAMIN_ID, selectedVitaminId)
 
-
                 Navigation.findNavController(itemView).navigate(R.id.show_food, args)
+
+                val sound = MediaPlayer.create(requireContext(), R.raw.sound)
+                sound.start()
+                sound.setOnCompletionListener {
+                    sound.release()
+                }
             }
 
             // Send vitamins to RecyclerView
@@ -71,7 +78,6 @@ class VitaminFragment : Fragment() {
             RecyclerView.ViewHolder(inflater.inflate(R.layout.vitamin_list, parent, false)) {
 
             private val nameTextView: TextView
-
 
             init {
                 nameTextView = itemView.findViewById(R.id.vitamin_name)

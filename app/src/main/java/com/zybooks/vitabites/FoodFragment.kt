@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.TextView
@@ -33,10 +34,12 @@ class FoodFragment : Fragment() {
             nameTextView.text = vitamin!!.name
             var vitaminId = 1
             arguments?.let { vitaminId = it.getInt(ARG_VITAMIN_ID) }
+            val descriptionListView = rootView.findViewById<ListView>(R.id.food_description)
+            val fadeIn = AnimationUtils.loadAnimation(requireContext(), R.anim.slide_in_left)
+            descriptionListView.startAnimation(fadeIn)
 
             when (vitaminId) {
                 1 -> {
-                    val descriptionListView = rootView.findViewById<ListView>(R.id.food_description)
                     val vitaminAFoodsArray = resources.getStringArray(R.array.vitamin_a_foods)
                     val adapter = ArrayAdapter(
                         requireContext(),
@@ -46,7 +49,6 @@ class FoodFragment : Fragment() {
                     descriptionListView.adapter = adapter
                 }
                 2 -> {
-                    val descriptionListView = rootView.findViewById<ListView>(R.id.food_description)
                     val vitaminBFoodsArray = resources.getStringArray(R.array.vitamin_b12_foods)
                     val adapter = ArrayAdapter(
                         requireContext(),
@@ -56,7 +58,6 @@ class FoodFragment : Fragment() {
                     descriptionListView.adapter = adapter
                 }
                 3 -> {
-                    val descriptionListView = rootView.findViewById<ListView>(R.id.food_description)
                     val vitaminBFoodsArray = resources.getStringArray(R.array.vitamin_c_foods)
                     val adapter = ArrayAdapter(
                         requireContext(),
@@ -66,7 +67,6 @@ class FoodFragment : Fragment() {
                     descriptionListView.adapter = adapter
                 }
                 4 -> {
-                    val descriptionListView = rootView.findViewById<ListView>(R.id.food_description)
                     val vitaminAFoodsArray = resources.getStringArray(R.array.vitamin_d_foods)
                     val adapter = ArrayAdapter(
                         requireContext(),
@@ -76,7 +76,6 @@ class FoodFragment : Fragment() {
                     descriptionListView.adapter = adapter
                 }
                 5 -> {
-                    val descriptionListView = rootView.findViewById<ListView>(R.id.food_description)
                     val vitaminBFoodsArray = resources.getStringArray(R.array.vitamin_e_foods)
                     val adapter = ArrayAdapter(
                         requireContext(),
@@ -86,7 +85,6 @@ class FoodFragment : Fragment() {
                     descriptionListView.adapter = adapter
                 }
                 6 -> {
-                    val descriptionListView = rootView.findViewById<ListView>(R.id.food_description)
                     val vitaminBFoodsArray = resources.getStringArray(R.array.vitamin_k_foods)
                     val adapter = ArrayAdapter(
                         requireContext(),
@@ -96,7 +94,6 @@ class FoodFragment : Fragment() {
                     descriptionListView.adapter = adapter
                 }
                 7 -> {
-                    val descriptionListView = rootView.findViewById<ListView>(R.id.food_description)
                     val vitaminAFoodsArray = resources.getStringArray(R.array.vitamin_b6_foods)
                     val adapter = ArrayAdapter(
                         requireContext(),
@@ -106,7 +103,6 @@ class FoodFragment : Fragment() {
                     descriptionListView.adapter = adapter
                 }
                 8 -> {
-                    val descriptionListView = rootView.findViewById<ListView>(R.id.food_description)
                     val vitaminBFoodsArray = resources.getStringArray(R.array.vitamin_b9_foods)
                     val adapter = ArrayAdapter(
                         requireContext(),
@@ -116,7 +112,6 @@ class FoodFragment : Fragment() {
                     descriptionListView.adapter = adapter
                 }
                 9 -> {
-                    val descriptionListView = rootView.findViewById<ListView>(R.id.food_description)
                     val vitaminBFoodsArray = resources.getStringArray(R.array.vitamin_b3_foods)
                     val adapter = ArrayAdapter(
                         requireContext(),
@@ -126,7 +121,6 @@ class FoodFragment : Fragment() {
                     descriptionListView.adapter = adapter
                 }
                 10 -> {
-                    val descriptionListView = rootView.findViewById<ListView>(R.id.food_description)
                     val vitaminAFoodsArray = resources.getStringArray(R.array.vitamin_zn_foods)
                     val adapter = ArrayAdapter(
                         requireContext(),
@@ -136,7 +130,6 @@ class FoodFragment : Fragment() {
                     descriptionListView.adapter = adapter
                 }
                 11 -> {
-                    val descriptionListView = rootView.findViewById<ListView>(R.id.food_description)
                     val vitaminBFoodsArray = resources.getStringArray(R.array.vitamin_mg_foods)
                     val adapter = ArrayAdapter(
                         requireContext(),
@@ -146,7 +139,6 @@ class FoodFragment : Fragment() {
                     descriptionListView.adapter = adapter
                 }
                 12 -> {
-                    val descriptionListView = rootView.findViewById<ListView>(R.id.food_description)
                     val vitaminBFoodsArray = resources.getStringArray(R.array.vitamin_ca_foods)
                     val adapter = ArrayAdapter(
                         requireContext(),
@@ -156,7 +148,6 @@ class FoodFragment : Fragment() {
                     descriptionListView.adapter = adapter
                 }
                 13 -> {
-                    val descriptionListView = rootView.findViewById<ListView>(R.id.food_description)
                     val vitaminBFoodsArray = resources.getStringArray(R.array.vitamin_fe_foods)
                     val adapter = ArrayAdapter(
                         requireContext(),
@@ -166,7 +157,6 @@ class FoodFragment : Fragment() {
                     descriptionListView.adapter = adapter
                 }
                 14 -> {
-                    val descriptionListView = rootView.findViewById<ListView>(R.id.food_description)
                     val vitaminBFoodsArray = resources.getStringArray(R.array.vitamin_b7_foods)
                     val adapter = ArrayAdapter(
                         requireContext(),
@@ -176,7 +166,6 @@ class FoodFragment : Fragment() {
                     descriptionListView.adapter = adapter
                 }
                 15 -> {
-                    val descriptionListView = rootView.findViewById<ListView>(R.id.food_description)
                     val vitaminBFoodsArray = resources.getStringArray(R.array.vitamin_omega_3_foods)
                     val adapter = ArrayAdapter(
                         requireContext(),
@@ -186,7 +175,6 @@ class FoodFragment : Fragment() {
                     descriptionListView.adapter = adapter
                 }
                 16 -> {
-                    val descriptionListView = rootView.findViewById<ListView>(R.id.food_description)
                     val vitaminBFoodsArray = resources.getStringArray(R.array.vitamin_cr_foods)
                     val adapter = ArrayAdapter(
                         requireContext(),

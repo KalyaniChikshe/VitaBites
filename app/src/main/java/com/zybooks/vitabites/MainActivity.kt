@@ -4,12 +4,17 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
+import androidx.work.WorkManager
+import java.util.concurrent.TimeUnit
+import androidx.work.NetworkType
+import androidx.work.PeriodicWorkRequestBuilder
+import androidx.work.Constraints
+
 
 //enum class VitaminSortOrder {
 //    ASCENDING, DESCENDING
@@ -29,9 +34,17 @@ class MainActivity : AppCompatActivity() {
         val appBarConfig = AppBarConfiguration.Builder(navController.graph).build()
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfig)
 
+        // Create a work request to show a notification every day
+        val constraints = Constraints.Builder()
+            .setRequiredNetworkType(NetworkType.NOT_REQUIRED)
+            .build()
+        val request = PeriodicWorkRequestBuilder<NotificationWorker>(1, TimeUnit.DAYS)
+            .setConstraints(constraints)
+            .build()
+
+        // Enqueue the work request
+        WorkManager.getInstance(this).enqueue(request)
     }
-
-
 
 
     override fun onSupportNavigateUp(): Boolean {
